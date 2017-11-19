@@ -70,3 +70,11 @@ as
 select M.IdProducto
 from MATERIAL M
 where M.IdProducto = @id
+
+--------------------------------------------------
+--------------------------------------------------
+
+CREATE PROCEDURE getMateriales 
+as
+select M.IdProducto, M.Descripción
+from MATERIAL M
