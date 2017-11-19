@@ -74,7 +74,8 @@ where M.IdProducto = @id
 --------------------------------------------------
 --------------------------------------------------
 
-CREATE PROCEDURE getMateriales 
+CREATE PROCEDURE [dbo].[getMateriales] @idProducto int 
 as
-select M.IdProducto, M.Descripción
+select M.IdMAterial, M.Descripción
 from MATERIAL M
+where @idProducto = M.IdProducto
