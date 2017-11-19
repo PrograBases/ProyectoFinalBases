@@ -16,11 +16,13 @@ AS INSERT INTO ORDEN_PROD
 
 
 --Update Orden de Produccion
-CREATE PROCEDURE [dbo]. Update_ProdOrder @fechaTerminado datetime,
+CREATE PROCEDURE [dbo]. Update_ProdOrder @NoLote varchar(50),
+								 @fechaTerminado datetime,
 								@status int
 AS UPDATE ORDEN_PROD
 				SET DatetimeFinalización = @fechaTerminado,
 				Estatus = @status
+				WHERE NoLote = @NoLote
 
 
 
@@ -29,7 +31,7 @@ CREATE PROCEDURE [dbo]. Delete_ProdOrder @NoLote varchar(50)
 AS DELETE FROM ORDEN_PROD WHERE @NoLote = NoLote	
 			
 
--- update fecha de terminado
+-- Update fecha de terminado
 CREATE PROCEDURE [dbo]. update_FechaTerminado @NoLote varchar(50),
 											  @fechaTerminado datetime
 AS 
@@ -38,8 +40,8 @@ SET DatetimeFinalización = @fechaTerminado
 WHERE NoLote = @NoLote
 
 
--- update status
-CREATE PROCEDURE [dbo]. update_FechaTerminado @NoLote varchar(50),
+-- Update status
+CREATE PROCEDURE [dbo]. update_Status @NoLote varchar(50),
 											  @status int
 AS 
 UPDATE ORDEN_PROD
