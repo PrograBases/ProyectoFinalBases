@@ -1,0 +1,10 @@
+C:\Users\CASA\source\repos\MATERIAL\MATERIAL\bin\Debug\MATERIAL.exe.config
+C:\Users\CASA\source\repos\MATERIAL\MATERIAL\bin\Debug\MATERIAL.exe
+C:\Users\CASA\source\repos\MATERIAL\MATERIAL\bin\Debug\MATERIAL.pdb
+C:\Users\CASA\source\repos\MATERIAL\MATERIAL\obj\Debug\MATERIAL.csprojResolveAssemblyReference.cache
+C:\Users\CASA\source\repos\MATERIAL\MATERIAL\obj\Debug\MATERIAL.Form1.resources
+C:\Users\CASA\source\repos\MATERIAL\MATERIAL\obj\Debug\MATERIAL.Properties.Resources.resources
+C:\Users\CASA\source\repos\MATERIAL\MATERIAL\obj\Debug\MATERIAL.csproj.GenerateResource.Cache
+C:\Users\CASA\source\repos\MATERIAL\MATERIAL\obj\Debug\MATERIAL.csproj.CoreCompileInputs.cache
+C:\Users\CASA\source\repos\MATERIAL\MATERIAL\obj\Debug\MATERIAL.exe
+C:\Users\CASA\source\repos\MATERIAL\MATERIAL\obj\Debug\MATERIAL.pdb
