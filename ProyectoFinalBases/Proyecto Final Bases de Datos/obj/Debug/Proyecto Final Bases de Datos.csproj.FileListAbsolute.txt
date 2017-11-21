@@ -1,0 +1,30 @@
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\bin\Debug\Proyecto Final Bases de Datos.exe.config
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\bin\Debug\Proyecto Final Bases de Datos.exe
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\bin\Debug\Proyecto Final Bases de Datos.pdb
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.csprojResolveAssemblyReference.cache
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Productos.resources
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Properties.Resources.resources
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.csproj.GenerateResource.Cache
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.csproj.CoreCompileInputs.cache
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.exe
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.pdb
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\bin\Debug\EntityFramework.dll
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\bin\Debug\EntityFramework.xml
+C:\Users\Joseph Salas\source\repos\Proyecto Final Bases de Datos\Proyecto Final Bases de Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\bin\Debug\Proyecto Final Bases de Datos.exe.config
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\bin\Debug\Proyecto Final Bases de Datos.exe
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\bin\Debug\Proyecto Final Bases de Datos.pdb
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\bin\Debug\EntityFramework.dll
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\bin\Debug\EntityFramework.xml
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.csprojResolveAssemblyReference.cache
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Productos.resources
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.MainScreen.resources
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Properties.Resources.resources
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.csproj.GenerateResource.Cache
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.csproj.CoreCompileInputs.cache
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.exe
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.pdb
+C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Componentes.resources
