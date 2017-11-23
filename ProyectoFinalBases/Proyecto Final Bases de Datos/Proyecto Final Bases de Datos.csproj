@@ -69,9 +69,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="checkLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkLists.Designer.cs">
+      <DependentUpon>checkLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="closeProduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="closeProduction.Designer.cs">
+      <DependentUpon>closeProduction.cs</DependentUpon>
+    </Compile>
     <Compile Include="Componentes.cs" />
     <Compile Include="Componentes.Designer.cs">
       <DependentUpon>Componentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components.Designer.cs">
+      <DependentUpon>Components.cs</DependentUpon>
     </Compile>
     <Compile Include="CrearOrden.cs" />
     <Compile Include="CrearOrden.Designer.cs">
@@ -88,6 +106,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_PRODDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Documents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents.Designer.cs">
+      <DependentUpon>Documents.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs">
@@ -131,14 +155,20 @@
     <Compile Include="view\IngresoFlujos.Designer.cs">
       <DependentUpon>IngresoFlujos.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\IngresoActividades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\IngresoActividades.Designer.cs">
-      <DependentUpon>IngresoActividades.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="checkLists.resx">
+      <DependentUpon>checkLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="closeProduction.resx">
+      <DependentUpon>closeProduction.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Componentes.resx">
       <DependentUpon>Componentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components.resx">
+      <DependentUpon>Components.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents.resx">
+      <DependentUpon>Documents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -160,9 +190,6 @@
     </Compile>
     <EmbeddedResource Include="view\IngresoFlujos.resx">
       <DependentUpon>IngresoFlujos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\IngresoActividades.resx">
-      <DependentUpon>IngresoActividades.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
