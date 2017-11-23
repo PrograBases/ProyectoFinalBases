@@ -28,3 +28,28 @@ C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proy
 C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.exe
 C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.pdb
 C:\Users\CASA\Downloads\ProyectoFinalBases-Joseph\ProyectoFinalBases-Joseph\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Componentes.resources
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.csprojResolveAssemblyReference.cache
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Componentes.resources
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Productos.resources
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.MainScreen.resources
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Properties.Resources.resources
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.view.IngresoFlujos.resources
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.view.IngresoVentanas.resources
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.csproj.GenerateResource.Cache
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.exe
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\Proyecto Final Bases de Datos.exe.config
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\Proyecto Final Bases de Datos.exe
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\Proyecto Final Bases de Datos.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\EntityFramework.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\EntityFramework.xml
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\bin\Debug\Xamarin.Forms.Xaml.xml

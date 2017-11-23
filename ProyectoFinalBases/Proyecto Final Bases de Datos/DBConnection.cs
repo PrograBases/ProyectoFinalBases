@@ -62,14 +62,11 @@ namespace Proyecto_Final_Bases_de_Datos
                     cmd.Parameters.Add("@TipoProducto", SqlDbType.NVarChar).Value = TP;
                     cmd.Parameters.Add("@Descripcion", SqlDbType.NVarChar).Value = Descp;
                     cmd.ExecuteNonQuery();
-        
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine("{0} No se pudo realizar el sp.", e);
                 }
-
-
             }
         }
 
@@ -139,7 +136,21 @@ namespace Proyecto_Final_Bases_de_Datos
             }
         }
 
-    }
-
-    
+        public void insertFlujoMaster(int idFlujo)
+        {
+            using (SqlCommand cmd = new SqlCommand("sp_insertar_flujo", connection))
+            {
+                try
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("@idFlujoMaster", SqlDbType.Int).Value = idFlujo;
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("{0} No se pudo realizar el sp.", e);
+                }
+            }
+        }
+    }    
 }
