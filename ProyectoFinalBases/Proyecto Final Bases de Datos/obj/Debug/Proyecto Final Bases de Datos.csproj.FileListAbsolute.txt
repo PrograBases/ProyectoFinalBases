@@ -92,3 +92,18 @@ C:\Users\CASA\Desktop\ProyectoFinalBases-master\ProyectoFinalBases-master\Proyec
 >>>>>>> 028910a7c850f625957a483ecad4e9890d43f849
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.MainScreenLínea.resources
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.view.IngresoActividades.resources
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.csprojResolveAssemblyReference.cache
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.exe
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.pdb
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.checkLists.resources
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.closeProduction.resources
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Componentes.resources
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Components.resources
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Documents.resources
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Productos.resources
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.MainScreen.resources
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.MainScreenLínea.resources
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.Properties.Resources.resources
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.view.IngresoFlujos.resources
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.csproj.GenerateResource.Cache
+C:\Users\Joseph Salas\Desktop\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.csproj.CoreCompileInputs.cache

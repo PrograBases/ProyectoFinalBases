@@ -69,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Componentes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +79,29 @@
     <Compile Include="CrearOrden.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+    <Compile Include="checkLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkLists.Designer.cs">
+      <DependentUpon>checkLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="closeProduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="closeProduction.Designer.cs">
+      <DependentUpon>closeProduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components.Designer.cs">
+      <DependentUpon>Components.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> a3b328e067d0ddcb43e0b5130ae4a7bfe283e763
     <Compile Include="CrearOrden.Designer.cs">
       <DependentUpon>CrearOrden.cs</DependentUpon>
     </Compile>
@@ -93,6 +117,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_PRODDataSet1.xsd</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="DB_PRODDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -102,6 +127,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_PRODDataSet3.xsd</DependentUpon>
+=======
+    <Compile Include="Documents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents.Designer.cs">
+      <DependentUpon>Documents.cs</DependentUpon>
+>>>>>>> a3b328e067d0ddcb43e0b5130ae4a7bfe283e763
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -155,8 +187,20 @@
     <Compile Include="view\IngresoFlujos.Designer.cs">
       <DependentUpon>IngresoFlujos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="checkLists.resx">
+      <DependentUpon>checkLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="closeProduction.resx">
+      <DependentUpon>closeProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components.resx">
+      <DependentUpon>Components.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents.resx">
+      <DependentUpon>Documents.cs</DependentUpon>
     <EmbeddedResource Include="Componentes.resx">
       <DependentUpon>Componentes.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
