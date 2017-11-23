@@ -130,6 +130,56 @@ GO
 -- Experimento F
 -- Haga un script que provoque un deadlock cíclico de 4 transacciones A – B – C – D – A 
 
+-- Transaccion A
+BEGIN TRANSACTION Tran_A;
+
+UPDATE FROM FLUJO_MASTER
+SET IdFlujoMaestro = 3
+WHERE IdFlujoMaestro = 1; 
+
+UPDATE FROM PRODUCTOS_MASTER
+SET IdFlujo = 1
+WHERE IdProducto = 1;
+
+COMMIT Tran_A;
+
+-- Transaccion B
+BEGIN TRANSACTION Tran_B;
+UPDATE FROM PRODUCTOS_MASTER
+SET IdFlujo = 3
+WHERE IdProducto = 1;
+
+UPDATE FROM MATERIAL
+SET Descripcion = 'Casa'
+WHERE IdMAterial = 2;
+
+COMMIT Tran_B;
+
+-- Transaccion C
+BEGIN TRANSACTION Tran_C;
+UPDATE FROM MATERIAL
+SET Descripcion = 'Bola'
+WHERE IdMAterial = 2;
+
+UPDATE FROM MUESTRA
+SET IdTipoMuestra = 1
+WHERE IdMuestra = 1;
+
+COMMIT Tran_C;
+
+-- Transaccion D
+BEGIN TRANSACTION Tran_D;
+UPDATE FROM MUESTRA
+SET IdTipoMuestra = 2
+WHERE IdMuestra = 1;
+
+UPDATE FROM FLUJO_MASTER
+SET IdFlujoMaestro = 2
+WHERE IdFlujoMaestro = 1; 
+
+COMMIT Tran_D;
+
+BE
 
 
 -- Experimento H
@@ -137,7 +187,7 @@ GO
 -- Mida el tiempo de respuesta para ambos casos usando: IN/NOT IN,  JOIN, EXCEPT, INTERSECT, EXIST y NOT EXISTS 
 -- para determinar cual muestra un mejor rendimiento.
 
--- Consulta 1
+-- Consulta 1 con Intersect
 -- Consulta para ver las ordenes activas de dos productos y sus componentes
 CREATE PROCEDURE [dbo].[interseccion] (@id1 int, @id2 int)
 AS
@@ -160,7 +210,43 @@ AS
 	inner join ACTIVIDAD_FLUJO_MASTER afm on afm.IdFlujoMaestro = fm.IdFlujoMaestro
 	where pm.IdProducto = @id2
 
--- Consulta 2
+-- Consulta 1 con IN
+CREATE PROCEDURE [dbo].[interseccionIN] (@id1 int, @id2 int)
+AS
+	-- Select para obtener los datos del primer producto
+	SELECT IdMAterial, IdFlujo, IdActividadFlujo
+	FROM PRODUCTOS_MASTER pm 
+	inner join ORDEN_PROD op on pm.IdProducto = op.IdProductoAsignado
+	inner join MATERIAL m on pm.IdProducto = m.IdProducto
+	inner join FLUJO_MASTER fm on pm.IdFlujo = fm.IdFlujoMaestro
+	inner join ACTIVIDAD_FLUJO_MASTER afm on afm.IdFlujoMaestro = fm.IdFlujoMaestro
+	where pm.IdProducto = @id1 and (IdMAterial, IdFlujo, IdActividadFlujo) IN (SELECT IdMAterial, IdFlujo, IdActividadFlujo
+																				FROM PRODUCTOS_MASTER pm 
+																				inner join ORDEN_PROD op on pm.IdProducto = op.IdProductoAsignado
+																				inner join MATERIAL m on pm.IdProducto = m.IdProducto
+																				inner join FLUJO_MASTER fm on pm.IdFlujo = fm.IdFlujoMaestro
+																				inner join ACTIVIDAD_FLUJO_MASTER afm on afm.IdFlujoMaestro = fm.IdFlujoMaestro
+																				where pm.IdProducto = @id2)
+
+-- Consulta 1 con Exists
+CREATE PROCEDURE [dbo].[interseccionE] (@id1 int, @id2 int)
+AS
+	-- Select para obtener los datos del primer producto
+	SELECT IdMAterial, IdFlujo, IdActividadFlujo
+	FROM PRODUCTOS_MASTER pm 
+	inner join ORDEN_PROD op on pm.IdProducto = op.IdProductoAsignado
+	inner join MATERIAL m on pm.IdProducto = m.IdProducto
+	inner join FLUJO_MASTER fm on pm.IdFlujo = fm.IdFlujoMaestro
+	inner join ACTIVIDAD_FLUJO_MASTER afm on afm.IdFlujoMaestro = fm.IdFlujoMaestro
+	where pm.IdProducto = @id1 and (IdMAterial, IdFlujo, IdActividadFlujo) EXISTS (SELECT IdMAterial, IdFlujo, IdActividadFlujo
+																				FROM PRODUCTOS_MASTER pm 
+																				inner join ORDEN_PROD op on pm.IdProducto = op.IdProductoAsignado
+																				inner join MATERIAL m on pm.IdProducto = m.IdProducto
+																				inner join FLUJO_MASTER fm on pm.IdFlujo = fm.IdFlujoMaestro
+																				inner join ACTIVIDAD_FLUJO_MASTER afm on afm.IdFlujoMaestro = fm.IdFlujoMaestro
+																				where pm.IdProducto = @id2)
+
+-- Consulta 2 con Except
 CREATE PROCEDURE [dbo].[diferencia] (@id1 int, @id2 int)
 AS
 	-- Select para obtener los datos del primer producto
@@ -181,6 +267,42 @@ AS
 	inner join FLUJO_MASTER fm on pm.IdFlujo = fm.IdFlujoMaestro
 	inner join ACTIVIDAD_FLUJO_MASTER afm on afm.IdFlujoMaestro = fm.IdFlujoMaestro
 	where pm.IdProducto = @id2
+
+-- Consulta 2 con Not In
+CREATE PROCEDURE [dbo].[diferenciaNI] (@id1 int, @id2 int)
+AS
+	-- Select para obtener los datos del primer producto
+	SELECT IdMAterial, IdFlujo, IdActividadFlujo
+	FROM PRODUCTOS_MASTER pm 
+	inner join ORDEN_PROD op on pm.IdProducto = op.IdProductoAsignado
+	inner join MATERIAL m on pm.IdProducto = m.IdProducto
+	inner join FLUJO_MASTER fm on pm.IdFlujo = fm.IdFlujoMaestro
+	inner join ACTIVIDAD_FLUJO_MASTER afm on afm.IdFlujoMaestro = fm.IdFlujoMaestro
+	where pm.IdProducto = @id1 and (IdMAterial, IdFlujo, IdActividadFlujo) NOT IN (SELECT IdMAterial, IdFlujo, IdActividadFlujo
+																					FROM PRODUCTOS_MASTER pm 
+																					inner join ORDEN_PROD op on pm.IdProducto = op.IdProductoAsignado
+																					inner join MATERIAL m on pm.IdProducto = m.IdProducto
+																					inner join FLUJO_MASTER fm on pm.IdFlujo = fm.IdFlujoMaestro
+																					inner join ACTIVIDAD_FLUJO_MASTER afm on afm.IdFlujoMaestro = fm.IdFlujoMaestro
+																					where pm.IdProducto = @id2)
+
+-- Consulta 2 con Not Exists
+CREATE PROCEDURE [dbo].[diferenciaNE] (@id1 int, @id2 int)
+AS
+	-- Select para obtener los datos del primer producto
+	SELECT IdMAterial, IdFlujo, IdActividadFlujo
+	FROM PRODUCTOS_MASTER pm 
+	inner join ORDEN_PROD op on pm.IdProducto = op.IdProductoAsignado
+	inner join MATERIAL m on pm.IdProducto = m.IdProducto
+	inner join FLUJO_MASTER fm on pm.IdFlujo = fm.IdFlujoMaestro
+	inner join ACTIVIDAD_FLUJO_MASTER afm on afm.IdFlujoMaestro = fm.IdFlujoMaestro
+	where pm.IdProducto = @id1 and (IdMAterial, IdFlujo, IdActividadFlujo) NOT EXISTS (SELECT IdMAterial, IdFlujo, IdActividadFlujo
+																					FROM PRODUCTOS_MASTER pm 
+																					inner join ORDEN_PROD op on pm.IdProducto = op.IdProductoAsignado
+																					inner join MATERIAL m on pm.IdProducto = m.IdProducto
+																					inner join FLUJO_MASTER fm on pm.IdFlujo = fm.IdFlujoMaestro
+																					inner join ACTIVIDAD_FLUJO_MASTER afm on afm.IdFlujoMaestro = fm.IdFlujoMaestro
+																					where pm.IdProducto = @id2)
 
 --***************************************************************************************************************************
 
