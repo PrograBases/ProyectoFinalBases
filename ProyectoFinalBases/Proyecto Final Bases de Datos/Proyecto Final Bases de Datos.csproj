@@ -69,15 +69,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Componentes.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Componentes.cs" />
     <Compile Include="Componentes.Designer.cs">
       <DependentUpon>Componentes.cs</DependentUpon>
     </Compile>
-    <Compile Include="CrearOrden.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="CrearOrden.cs" />
     <Compile Include="CrearOrden.Designer.cs">
       <DependentUpon>CrearOrden.cs</DependentUpon>
     </Compile>
@@ -93,15 +89,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_PRODDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="MainScreen.cs" />
     <Compile Include="MainScreen.Designer.cs">
       <DependentUpon>MainScreen.cs</DependentUpon>
     </Compile>
