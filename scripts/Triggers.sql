@@ -22,15 +22,17 @@ BEGIN
 		SET @pantalla = (SELECT IdPantalla FROM inserted)
 		SET @actividad = (SELECT IdActividad FROM inserted)
 		SET @fecha = (SELECT Fecha_hora FROM inserted)
-		SET @usuario = (SELECT Usuario FROM inserted)
 	END
 	ELSE 
 	BEGIN
 		SET @id = (SELECT IdBitacora FROM deleted)
+		SET @pantalla = (SELECT IdPantalla FROM deleted)
+		SET @actividad = (SELECT IdActividad FROM deleted)
+		SET @fecha = (SELECT Fecha_hora FROM deleted)
 	END
 
-	INSERT INTO BITÁCORA (IdBitacora, IdPantalla, IdActividad, Fecha_hora, Usuario)
-	VALUES (@id, @pantalla, @actividad, @fecha, @usuario)
+	INSERT INTO BITÁCORA (IdBitacora, IdPantalla, IdActividad, Fecha_hora)
+	VALUES (@id, @pantalla, @actividad, @fecha)
 
 END
 
