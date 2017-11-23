@@ -40,8 +40,6 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.loteLbl = new System.Windows.Forms.Label();
             this.aceptarOrdProdBTN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -100,7 +98,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(41, 175);
+            this.numericUpDown1.Location = new System.Drawing.Point(12, 274);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(36, 20);
             this.numericUpDown1.TabIndex = 6;
@@ -113,10 +111,11 @@
             this.label4.Size = new System.Drawing.Size(10, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = ":";
+           // this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(99, 175);
+            this.numericUpDown2.Location = new System.Drawing.Point(58, 274);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(35, 20);
             this.numericUpDown2.TabIndex = 8;
@@ -127,7 +126,7 @@
             this.comboBox3.Items.AddRange(new object[] {
             "AM",
             "PM"});
-            this.comboBox3.Location = new System.Drawing.Point(140, 174);
+            this.comboBox3.Location = new System.Drawing.Point(99, 273);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(48, 21);
             this.comboBox3.TabIndex = 9;
@@ -152,25 +151,6 @@
             this.checkedListBox1.Size = new System.Drawing.Size(120, 49);
             this.checkedListBox1.TabIndex = 11;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(35, 239);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(128, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Número de lote asignado:";
-            // 
-            // loteLbl
-            // 
-            this.loteLbl.AutoSize = true;
-            this.loteLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loteLbl.Location = new System.Drawing.Point(58, 263);
-            this.loteLbl.Name = "loteLbl";
-            this.loteLbl.Size = new System.Drawing.Size(76, 25);
-            this.loteLbl.TabIndex = 13;
-            this.loteLbl.Text = "label7";
-            // 
             // aceptarOrdProdBTN
             // 
             this.aceptarOrdProdBTN.Location = new System.Drawing.Point(428, 264);
@@ -187,8 +167,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(597, 306);
             this.Controls.Add(this.aceptarOrdProdBTN);
-            this.Controls.Add(this.loteLbl);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox3);
@@ -224,8 +202,6 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label loteLbl;
         private System.Windows.Forms.Button aceptarOrdProdBTN;
     }
 }

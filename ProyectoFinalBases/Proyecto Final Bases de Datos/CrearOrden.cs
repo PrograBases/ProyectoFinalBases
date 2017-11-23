@@ -38,7 +38,7 @@ namespace Proyecto_Final_Bases_de_Datos
 
         private void prodLineBOX_Update()
         {
-            Console.WriteLine("JOJOJOJOJOJO");
+            //Console.WriteLine("JOJOJOJOJOJO");
             SqlCommand cmd = new SqlCommand();
             SqlDataReader reader;
             try
@@ -132,33 +132,38 @@ namespace Proyecto_Final_Bases_de_Datos
         private void aceptarOrdProdBTN_Click(object sender, EventArgs e)
         {
             ProductionOrder prod = new ProductionOrder("");
-            //String _noLote, int _id, DateTime _creationDate, DateTime _finishedDate, int _status
+            
             ProductionOrderModel prodMod = new ProductionOrderModel();
 
             string idProd = (string)prodBOX.SelectedItem;
-            //Console.WriteLine(idProd.Split(' ')[0]);
+            int j;                            //EL CODIGO DEL PRODUCTO
+            Int32.TryParse(idProd.Split(' ')[0], out j);
+           
+            //dateTimePicker1.Value es la fecha de finalización
 
-            //int id;
-            int j;
-            if (Int32.TryParse(idProd.Split(' ')[0], out j)) ;
-            //idProd.Split(' ')[0]
-            Console.WriteLine(dateTimePicker1.Value);
-
-           if ((string)checkedListBox1.SelectedItem == "Sí")
+           if ((string)checkedListBox1.SelectedItem == "Sí")                  //Si lo quiere poner en started
             {
                 ProductionOrder prodNuevo = 
                 new ProductionOrder(prodMod.getNewProdOrderNumber("CR"), j,
                 DateTime.Now, dateTimePicker1.Value, 2);
+
+                ProductionOrderModel prod2 = new ProductionOrderModel(prodNuevo);
             }
-            else
+            else                                                              //Si NO lo quiere poner en started  
             {
                 ProductionOrder prodNuevo =
                 new ProductionOrder(prodMod.getNewProdOrderNumber("CR"), j,
                 DateTime.Now, dateTimePicker1.Value, 1);
 
+                ProductionOrderModel prod2 = new ProductionOrderModel(prodNuevo);
+
             }
+
+            
+
 
 
         }
+
     }
 }

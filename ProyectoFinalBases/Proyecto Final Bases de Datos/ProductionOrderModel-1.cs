@@ -31,8 +31,12 @@ namespace Proyecto_Final_Bases_de_Datos
                 cmd.Parameters.Add("@fechaCreacion", SqlDbType.DateTime).Value = prodOrder.getCreationDate();
                 cmd.Parameters.Add("@fechaTerminado", SqlDbType.DateTime).Value = prodOrder.getFinishedDate();
                 cmd.Parameters.Add("@status", SqlDbType.Int).Value = prodOrder.getStatus();
-                
-                cmd.ExecuteNonQuery();    
+
+                connection.Open();
+
+                cmd.ExecuteNonQuery();
+
+                connection.Close();
                 return true;
             }
             catch (Exception e) {
@@ -131,6 +135,7 @@ namespace Proyecto_Final_Bases_de_Datos
         {
             SqlCommand cmd;
             string nolote = "", day, year, month, date, tuple, id;
+            
             List<string> monthLetter = new List<string> { "A","B","C","D","E",
                                                 "F","G","H","I","J","K","L"};
 
@@ -140,9 +145,6 @@ namespace Proyecto_Final_Bases_de_Datos
                 cmd = new SqlCommand("get_new_OrderNumber", connection);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.Add("@string", SqlDbType.VarChar, 50).Value = "";
-
-                /*cmd.Parameters.Add("@string", SqlDbType.VarChar);
-                cmd.Parameters["@string"].Value = DBNull.Value;*/
 
 
                 date = DateTime.Now.ToString();
@@ -187,7 +189,7 @@ namespace Proyecto_Final_Bases_de_Datos
             catch (Exception e)
             {
                 Console.WriteLine(e.GetBaseException());
-                System.Console.WriteLine("No se pudo realizar la consulta");
+                System.Console.WriteLine("Error");
 
             }
             finally
