@@ -41,8 +41,9 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.mantenimientoFlujosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.mantenimientoActividadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,7 +132,8 @@
             this.toolStripMenuItem2,
             this.toolStripMenuItem3,
             this.toolStripMenuItem4,
-            this.mantenimientoFlujosToolStripMenuItem});
+            this.mantenimientoFlujosToolStripMenuItem,
+            this.mantenimientoActividadesToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(50, 20);
             this.toolStripMenuItem1.Text = "Menú";
@@ -157,6 +159,13 @@
             this.toolStripMenuItem4.Text = "Componentes";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
+            // mantenimientoFlujosToolStripMenuItem
+            // 
+            this.mantenimientoFlujosToolStripMenuItem.Name = "mantenimientoFlujosToolStripMenuItem";
+            this.mantenimientoFlujosToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.mantenimientoFlujosToolStripMenuItem.Text = "Mantenimiento flujos";
+            this.mantenimientoFlujosToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoFlujosToolStripMenuItem_Click);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(0, 468);
@@ -167,12 +176,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // mantenimientoFlujosToolStripMenuItem
+            // mantenimientoActividadesToolStripMenuItem
             // 
-            this.mantenimientoFlujosToolStripMenuItem.Name = "mantenimientoFlujosToolStripMenuItem";
-            this.mantenimientoFlujosToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.mantenimientoFlujosToolStripMenuItem.Text = "Mantenimiento flujos";
-            this.mantenimientoFlujosToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoFlujosToolStripMenuItem_Click);
+            this.mantenimientoActividadesToolStripMenuItem.Name = "mantenimientoActividadesToolStripMenuItem";
+            this.mantenimientoActividadesToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.mantenimientoActividadesToolStripMenuItem.Text = "Mantenimiento actividades";
+            this.mantenimientoActividadesToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoActividadesToolStripMenuItem_Click);
             // 
             // MainScreenLínea
             // 
@@ -215,5 +224,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoFlujosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoActividadesToolStripMenuItem;
     }
 }
