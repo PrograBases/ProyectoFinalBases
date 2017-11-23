@@ -135,5 +135,11 @@ namespace Proyecto_Final_Bases_de_Datos
             view.IngresoFlujos ingresoFlujo = new view.IngresoFlujos();
             ingresoFlujo.Show();
         }
+
+        private void mantenimientoActividadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            view.IngresoActividades ingresoActividades = new view.IngresoActividades();
+            ingresoActividades.Show();
+        }
     }
 }
