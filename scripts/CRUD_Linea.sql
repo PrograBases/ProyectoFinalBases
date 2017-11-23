@@ -1,7 +1,7 @@
 -- CRUD Linea_Producto
 
 -- Insert
-CREATE PROCEDURE usp_Linea_Read
+CREATE PROCEDURE usp_Linea_Insert
 	   @IdLinea int,
 	   @IdOrden int
 	 
@@ -11,8 +11,8 @@ INSERT INTO Linea_Prod  (
 	   IdLineaProd, 
 	   IdOrdenAsignada)
     VALUES (
-    	@IdLinea int,
-    	@IdOrden int)
+    	@IdLinea,
+    	@IdOrden)
 END
 
 -- Read
