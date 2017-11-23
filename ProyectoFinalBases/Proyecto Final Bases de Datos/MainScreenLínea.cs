@@ -123,12 +123,17 @@ namespace Proyecto_Final_Bases_de_Datos
         {
             Productos newProd = new Productos();
             newProd.Show();
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.InitializeActivities(1);
+        }
+
+        private void mantenimientoFlujosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            view.IngresoFlujos ingresoFlujo = new view.IngresoFlujos();
+            ingresoFlujo.Show();
         }
     }
 }

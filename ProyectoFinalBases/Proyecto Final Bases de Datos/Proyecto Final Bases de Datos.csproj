@@ -139,11 +139,11 @@
     <Compile Include="view\IngresoFlujos.Designer.cs">
       <DependentUpon>IngresoFlujos.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\IngresoVentanas.cs">
+    <Compile Include="view\IngresoActividades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\IngresoVentanas.Designer.cs">
-      <DependentUpon>IngresoVentanas.cs</DependentUpon>
+    <Compile Include="view\IngresoActividades.Designer.cs">
+      <DependentUpon>IngresoActividades.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Componentes.resx">
       <DependentUpon>Componentes.cs</DependentUpon>
@@ -169,8 +169,8 @@
     <EmbeddedResource Include="view\IngresoFlujos.resx">
       <DependentUpon>IngresoFlujos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\IngresoVentanas.resx">
-      <DependentUpon>IngresoVentanas.cs</DependentUpon>
+    <EmbeddedResource Include="view\IngresoActividades.resx">
+      <DependentUpon>IngresoActividades.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

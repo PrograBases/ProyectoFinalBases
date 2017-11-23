@@ -34,14 +34,29 @@ namespace Proyecto_Final_Bases_de_Datos.view
         private void button1_Click(object sender, EventArgs e)
         {
             int nuevoFlujoMaster = Int32.Parse(nuevoFlujoMasterTxt.Text);
+            dbConnection.conectar();
             dbConnection.insertFlujoMaster(Int32.Parse(nuevoFlujoMasterTxt.Text));
             dbConnection.desconectar();
             this.actualizarGrid();
+            nuevoFlujoMasterTxt.Text = "";
         }
 
         private void actualizarGrid()
         {
             dbConnection.actualizarDataGridView(this.dataGridView1, "Select * From FLUJO_MASTER");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int nuevoFlujo = Int32.Parse(codigoFlujoTxt.Text);
+            int nuevoFlujoMaster = Int32.Parse(codigoFlujoMasterTxt.Text);
+
+            dbConnection.conectar();
+            dbConnection.insertFlujo(nuevoFlujo, nuevoFlujoMaster);
+            dbConnection.desconectar();
+            this.actualizarGrid();
+            codigoFlujoTxt.Text = "";
+            codigoFlujoMasterTxt.Text = "";
         }
     }
 }

@@ -153,5 +153,23 @@ namespace Proyecto_Final_Bases_de_Datos
                 }
             }
         }
+
+        public void insertFlujo(int idFlujo, int idFlujoMaster)
+        {
+            using (SqlCommand cmd = new SqlCommand("sp_insertar_flujo_normal", connection))
+            {
+                try
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("@idFlujo", SqlDbType.Int).Value = idFlujo;
+                    cmd.Parameters.Add("@idFlujoMaster", SqlDbType.Int).Value = idFlujoMaster;
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("{0} No se pudo realizar el sp.", e);
+                }
+            }
+        }        
     }    
 }

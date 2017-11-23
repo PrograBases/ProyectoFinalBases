@@ -42,6 +42,7 @@
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
+            this.mantenimientoFlujosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,7 +130,8 @@
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem2,
             this.toolStripMenuItem3,
-            this.toolStripMenuItem4});
+            this.toolStripMenuItem4,
+            this.mantenimientoFlujosToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(50, 20);
             this.toolStripMenuItem1.Text = "Menú";
@@ -164,6 +166,13 @@
             this.button1.Text = "Test (nada más para que prueben)";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // mantenimientoFlujosToolStripMenuItem
+            // 
+            this.mantenimientoFlujosToolStripMenuItem.Name = "mantenimientoFlujosToolStripMenuItem";
+            this.mantenimientoFlujosToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.mantenimientoFlujosToolStripMenuItem.Text = "Mantenimiento flujos";
+            this.mantenimientoFlujosToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoFlujosToolStripMenuItem_Click);
             // 
             // MainScreenLínea
             // 
@@ -205,5 +214,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoFlujosToolStripMenuItem;
     }
 }

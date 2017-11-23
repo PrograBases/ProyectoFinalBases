@@ -90,3 +90,5 @@ C:\Users\CASA\Desktop\ProyectoFinalBases-master\ProyectoFinalBases-master\Proyec
 C:\Users\CASA\Desktop\ProyectoFinalBases-master\ProyectoFinalBases-master\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto Final Bases de Datos.pdb
 C:\Users\CASA\Desktop\ProyectoFinalBases-master\ProyectoFinalBases-master\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.MainScreenLínea.resources
 >>>>>>> 028910a7c850f625957a483ecad4e9890d43f849
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.MainScreenLínea.resources
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\ProyectoFinalBases\ProyectoFinalBases\Proyecto Final Bases de Datos\obj\Debug\Proyecto_Final_Bases_de_Datos.view.IngresoActividades.resources
