@@ -69,11 +69,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Componentes.cs" />
+    <Compile Include="Componentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Componentes.Designer.cs">
       <DependentUpon>Componentes.cs</DependentUpon>
     </Compile>
-    <Compile Include="CrearOrden.cs" />
+    <Compile Include="CrearOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CrearOrden.Designer.cs">
       <DependentUpon>CrearOrden.cs</DependentUpon>
     </Compile>
@@ -89,11 +93,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_PRODDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs" />
+    <Compile Include="DB_PRODDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_PRODDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_PRODDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_PRODDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainScreen.cs" />
+    <Compile Include="MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainScreen.Designer.cs">
       <DependentUpon>MainScreen.cs</DependentUpon>
     </Compile>
@@ -125,6 +143,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\IngresoActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\IngresoActividades.Designer.cs">
+      <DependentUpon>IngresoActividades.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\IngresoFlujos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +176,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="view\IngresoActividades.resx">
+      <DependentUpon>IngresoActividades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\IngresoFlujos.resx">
       <DependentUpon>IngresoFlujos.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +207,28 @@
     </None>
     <None Include="DB_PRODDataSet1.xss">
       <DependentUpon>DB_PRODDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_PRODDataSet2.xsc">
+      <DependentUpon>DB_PRODDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_PRODDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_PRODDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_PRODDataSet2.xss">
+      <DependentUpon>DB_PRODDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_PRODDataSet3.xsc">
+      <DependentUpon>DB_PRODDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_PRODDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_PRODDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_PRODDataSet3.xss">
+      <DependentUpon>DB_PRODDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
