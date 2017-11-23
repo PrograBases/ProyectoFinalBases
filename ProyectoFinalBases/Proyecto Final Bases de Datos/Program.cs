@@ -17,7 +17,7 @@ namespace Proyecto_Final_Bases_de_Datos
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Productos());
-            Application.Run(new MainScreen());
+            Application.Run(new MainScreenLínea());
         }
     }
 }

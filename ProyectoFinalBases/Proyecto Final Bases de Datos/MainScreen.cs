@@ -15,13 +15,23 @@ namespace Proyecto_Final_Bases_de_Datos
         public MainScreen()
         {
             InitializeComponent();
+            MainScreenLínea a = new MainScreenLínea();
+            a.Show();
+            a.InitializeActivities(1);
         }
 
+
+        private void callMainScreenLine(int idProducto)
+        {
+
+
+        }
         private void mantProdBTN_Click(object sender, EventArgs e)
         {
             //Application.Run(new Productos());
             Productos newProd = new Productos();
             newProd.Show();
+            
 
 
         }

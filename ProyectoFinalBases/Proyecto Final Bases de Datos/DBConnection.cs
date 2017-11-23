@@ -14,6 +14,7 @@ namespace Proyecto_Final_Bases_de_Datos
         //SqlConnection connection;
         private static DBConnection connectionInstance = null;
         private static SqlConnection connection;
+
         private static Boolean connected;
 
         public void conectar()
@@ -88,8 +89,6 @@ namespace Proyecto_Final_Bases_de_Datos
                 {
                     Console.WriteLine("{0} No se pudo realizar el sp.", e);
                 }
-
-
             }
         }
 
@@ -111,9 +110,11 @@ namespace Proyecto_Final_Bases_de_Datos
                                       "password=password;server=serverurl;" +
                                       "Trusted_Connection=yes;" +
                                       "database=database; " +
-                                               "connection timeout=30");
-                Console.WriteLine("Connected to DATABASE");*/
-                connection = new SqlConnection("Server= localhost; Database= DB_PROD; Integrated Security=True;");
+                                               "connection timeout=30");*/
+                connection = new SqlConnection("Data Source=163.178.173.148;Initial Catalog=DB_PROD;Persist Security Info=True;User ID=estudiantes;Password=estudiantes");
+                Console.WriteLine("Connected to DATABASE");
+
+                //connection = new SqlConnection("Server= localhost; Database= DB_PROD; Integrated Security=True;");
                 connected = true;
                 return connection;
             }

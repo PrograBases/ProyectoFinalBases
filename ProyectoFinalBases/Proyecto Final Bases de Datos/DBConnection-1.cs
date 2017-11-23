@@ -25,13 +25,13 @@ namespace MATERIAL
         public SqlConnection connect() {
             try
             {
-                /*connection = new SqlConnection("user id=username;" +
-                                      "password=password;server=serverurl;" +
+                connection = new SqlConnection("user id=estudiantes;" +
+                                      "password=estudiantes;server=163.178.173.148;" +
                                       "Trusted_Connection=yes;" +
                                       "database=database; " +
                                                "connection timeout=30");
-                Console.WriteLine("Connected to DATABASE");*/
-                connection = new SqlConnection("Server= localhost; Database= DB_PROD; Integrated Security=True;");
+                Console.WriteLine("Connected to DATABASE");
+                //connection = new SqlConnection("Server= localhost; Database= DB_PROD; Integrated Security=True;");
                 connected = true;
                 return connection;
             }
